@@ -24,36 +24,19 @@
             background-color: var(--bg);
             background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
+            display: flex; justify-content: center; align-items: center; padding: 15px;
         }
 
         .container {
-            width: 100%;
-            max-width: 440px;
-            background: #ffffff;
-            border-radius: 32px;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
-            overflow: hidden;
-            position: relative;
+            width: 100%; max-width: 440px; background: #ffffff;
+            border-radius: 32px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+            overflow: hidden; position: relative;
         }
 
         #landing-page { text-align: center; padding: 0 0 30px 0; }
-        
-        /* تنسيق الصورة لتظهر بشكل كامل واحترافي */
-        .main-img { 
-            width: 100%; 
-            max-height: 500px; 
-            object-fit: cover; 
-            display: block; 
-            border-bottom: 5px solid var(--accent); 
-        }
-
+        .main-img { width: 100%; max-height: 500px; object-fit: cover; display: block; border-bottom: 5px solid var(--accent); }
         .promo-text { padding: 25px; }
         .promo-text h2 { color: #1e293b; margin-bottom: 10px; font-size: 24px; }
-        
         .btn-next {
             background: linear-gradient(45deg, var(--accent), var(--primary));
             color: white; border: none; padding: 20px; width: 85%;
@@ -62,73 +45,29 @@
         }
 
         #payment-page { display: none; }
-        .top-header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 35px 20px; text-align: center; color: white;
-        }
-
-        .price-tag {
-            background: #fffbeb;
-            border: 2px solid #fcd34d;
-            color: #92400e;
-            padding: 15px;
-            margin: 20px;
-            border-radius: 15px;
-            font-weight: 800;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+        .top-header { background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 35px 20px; text-align: center; color: white; }
+        
+        .price-tag { 
+            background: #fff0f6; border: 2px solid var(--accent); 
+            color: var(--accent); padding: 15px; margin: 20px; 
+            border-radius: 15px; font-weight: 800; font-size: 17px; 
+            display: flex; align-items: center; justify-content: center; gap: 10px; 
         }
 
         .content { padding: 10px 25px 30px; }
-
-        .method-item {
-            border: 2px solid #f1f5f9; padding: 18px; border-radius: 20px;
-            margin-bottom: 15px; cursor: pointer; transition: 0.3s;
-            display: flex; justify-content: space-between; align-items: center;
-        }
+        .method-item { border: 2px solid #f1f5f9; padding: 18px; border-radius: 20px; margin-bottom: 15px; cursor: pointer; transition: 0.3s; display: flex; justify-content: space-between; align-items: center; }
         .method-item.active { border-color: var(--primary); background: #f5f3ff; }
-
-        .payment-info {
-            display: none; background: #f8fafc; padding: 20px;
-            border-radius: 20px; border: 2px dashed #e2e8f0; margin-bottom: 20px;
-        }
-
-        .copy-box {
-            background: white; padding: 15px; border-radius: 15px;
-            display: flex; justify-content: space-between; align-items: center;
-            font-weight: 800; font-size: 20px; border: 1px solid #edf2f7;
-        }
-
+        .payment-info { display: none; background: #f8fafc; padding: 20px; border-radius: 20px; border: 2px dashed #e2e8f0; margin-bottom: 20px; }
+        .copy-box { background: white; padding: 15px; border-radius: 15px; display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 20px; border: 1px solid #edf2f7; }
         .copy-btn { background: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 10px; cursor: pointer; }
+        input { width: 100%; padding: 20px; border-radius: 18px; border: 2px solid #e2e8f0; outline: none; font-size: 19px; font-weight: 800; margin-top: 15px; text-align: center; }
+        .btn-pay { width: 100%; padding: 20px; background: #1e293b; color: white; border: none; border-radius: 18px; font-size: 18px; font-weight: 800; cursor: pointer; margin-top: 20px; }
 
-        input {
-            width: 100%; padding: 20px; border-radius: 18px; border: 2px solid #e2e8f0;
-            outline: none; font-size: 19px; font-weight: 800; margin-top: 15px;
-        }
+        #final-page { display: none; text-align: center; padding: 40px 25px; }
+        .whatsapp-main-btn { display: flex; align-items: center; justify-content: center; gap: 12px; background: var(--whatsapp); color: white; text-decoration: none; padding: 22px; border-radius: 20px; font-weight: 800; font-size: 18px; margin-top: 20px; }
+        #code-section { display: none; margin-top: 30px; border-top: 2px dashed #eee; padding-top: 20px; }
 
-        .btn-pay {
-            width: 100%; padding: 20px; background: #1e293b; color: white;
-            border: none; border-radius: 18px; font-size: 18px; font-weight: 800;
-            cursor: pointer; margin-top: 20px;
-        }
-
-        #final-page { display: none; text-align: center; padding: 50px 25px; }
-
-        .whatsapp-main-btn {
-            display: flex; align-items: center; justify-content: center; gap: 12px;
-            background: var(--whatsapp); color: white; text-decoration: none;
-            padding: 22px; border-radius: 20px; font-weight: 800; font-size: 20px; margin-top: 30px;
-        }
-
-        .live-notif {
-            position: fixed; bottom: 20px; right: 20px; background: white;
-            padding: 12px 20px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border-right: 4px solid var(--success); display: flex; align-items: center;
-            gap: 12px; transform: translateX(250%); transition: 0.6s; z-index: 1000;
-        }
+        .live-notif { position: fixed; bottom: 20px; right: 20px; background: white; padding: 12px 20px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-right: 4px solid var(--success); display: flex; align-items: center; gap: 12px; transform: translateX(250%); transition: 0.6s; z-index: 1000; }
         .live-notif.show { transform: translateX(0); }
     </style>
 </head>
@@ -141,60 +80,59 @@
 
     <div class="container">
         <div id="landing-page">
-            <img src="https://i.ibb.co/20D3NnKd/87be32967d10fee9faf08a6368c81be0.jpg" class="main-img" alt="نورا">
+            <img src="https://i.ibb.co/B5wQymgm/IMG.jpg" class="main-img" alt="محتوى نورا">
             <div class="promo-text">
-                <h2>صور وفيديوهات نورا الخاصة 🔥</h2>
-                <p>استمتع بمشاهدة المحتوى الحصري كاملاً بجودة عالية.</p>
-                <button class="btn-next" onclick="goToPayment()">إضغط للتالي <i class="fa-solid fa-arrow-left"></i></button>
+                <h2>ألبوم صور وفيديوهات نورا 🔥</h2>
+                <p>إضغط بالأسفل لفتح المحتوى الحصري والخاص كاملاً.</p>
+                <button class="btn-next" onclick="goToPayment()">مشاهدة العروض <i class="fa-solid fa-arrow-left"></i></button>
             </div>
         </div>
 
         <div id="payment-page">
             <div class="top-header">
-                <h1>تفعيل الاشتراك ⚡</h1>
-                <p style="font-size: 13px; opacity: 0.9;">خطوة واحدة لمشاهدة كافة الصور والفيديوهات</p>
+                <h1>دفع تكلفة الصور والفيديوهات ⚡</h1>
+                <p style="font-size: 13px; opacity: 0.9;">أتمم التحويل لفتح المحتوى الخاص فوراً</p>
             </div>
-
+            
             <div class="price-tag">
-                <i class="fa-solid fa-star"></i>
-                قيمة الاشتراك: 150 جنيهاً مصرياً فقط
+                <i class="fa-solid fa-camera-retro"></i>
+                رسوم الوصول للصور والفيديوهات: 150 جنيهاً
             </div>
 
             <div class="content">
-                <p style="font-size: 14px; color: #64748b; margin-bottom: 10px; font-weight: 600;">اختر وسيلة الدفع لتحويل 150ج:</p>
+                <p style="font-size: 14px; color: #64748b; margin-bottom: 15px; font-weight: 600; text-align: center;">اختر وسيلة الدفع المناسبة لك:</p>
                 
-                <div class="method-item" id="item-vf" onclick="togglePay('vf')">
-                    <div><strong>فودافون كاش</strong></div>
-                    <i class="fa-solid fa-mobile-screen" style="color:#e60000; font-size: 26px;"></i>
-                </div>
-
+                <div class="method-item" onclick="togglePay('vf')"><strong>فودافون كاش</strong><i class="fa-solid fa-mobile-screen" style="color:#e60000; font-size: 26px;"></i></div>
                 <div id="info-vf" class="payment-info">
-                    <p style="font-size:12px; margin-bottom:8px; color:#475569;">حول مبلغ 150ج للرقم التالي:</p>
                     <div class="copy-box"><span id="num-vf">01021805487</span><button class="copy-btn" onclick="copy('num-vf')">نسخ</button></div>
                 </div>
 
-                <div class="method-item" id="item-insta" onclick="togglePay('insta')">
-                    <div><strong>انستاباي</strong></div>
-                    <i class="fa-solid fa-bolt" style="color:#5b21b6; font-size: 26px;"></i>
-                </div>
-
+                <div class="method-item" onclick="togglePay('insta')"><strong>انستاباي</strong><i class="fa-solid fa-bolt" style="color:#5b21b6; font-size: 26px;"></i></div>
                 <div id="info-insta" class="payment-info">
-                    <p style="font-size:12px; margin-bottom:8px; color:#475569;">حول مبلغ 150ج للحساب التالي:</p>
                     <div class="copy-box"><span id="num-insta">01206521622</span><button class="copy-btn" onclick="copy('num-insta')">نسخ</button></div>
                 </div>
 
                 <div id="userInput" style="display:none;">
-                    <input type="number" id="phone-input" placeholder="أدخل رقمك الذي حولت منه">
-                    <button class="btn-pay" onclick="finish()">تأكيد التحويل الآن ✨</button>
+                    <input type="number" id="phone-input" placeholder="رقمك الذي تم التحويل منه">
+                    <button class="btn-pay" onclick="finish()">تأكيد وإرسال إثبات الدفع ✨</button>
                 </div>
             </div>
         </div>
 
         <div id="final-page">
-            <i class="fa-solid fa-circle-check" style="font-size: 60px; color: var(--success);"></i>
-            <h2 style="margin-top:20px;">تم استلام الطلب!</h2>
-            <p style="margin: 15px 0; color: #64748b; line-height: 1.6;">باقي خطوة واحدة، اضغط بالأسفل لإرسال <b>صورة التحويل (150ج)</b> للواتساب لتفعيل حسابك فوراً.</p>
-            <a id="wa-link" href="#" class="whatsapp-main-btn">ارسال الإسكرين واتساب</a>
+            <i class="fa-solid fa-shield-halved" style="font-size: 60px; color: var(--accent);"></i>
+            <h2 style="margin-top:20px;">تأكيد الدفع</h2>
+            <p style="margin: 15px 0; color: #64748b; line-height: 1.6;">
+                يرجى إرسال <b>صورة التحويل</b> للواتساب لاستلام <b>كود فك القفل</b> ومشاهدة كافة الصور والفيديوهات.
+            </p>
+            
+            <a id="wa-link" href="#" target="_blank" class="whatsapp-main-btn" onclick="showCodeSection()">إرسال الإسكرين واستلام الكود</a>
+
+            <div id="code-section">
+                <p style="font-weight: bold; color: var(--primary);">أدخل كود فك القفل هنا:</p>
+                <input type="text" id="activation-code" placeholder="----">
+                <button class="btn-pay" style="background: var(--success);" onclick="checkCode()">فتح الألبوم الآن 🔓</button>
+            </div>
         </div>
     </div>
 
@@ -213,27 +151,44 @@
         function copy(id) {
             const text = document.getElementById(id).innerText;
             navigator.clipboard.writeText(text);
-            alert("تم نسخ الرقم بنجاح، قم بتحويل 150ج");
+            alert("تم نسخ الرقم، يرجى تحويل مبلغ 150ج لفتح الصور والفيديوهات.");
         }
 
         function finish() {
             const phone = document.getElementById('phone-input').value;
-            if(phone.length < 11) { alert("يرجى إدخال رقم هاتف صحيح"); return; }
-            const msg = `قمت بتحويل مبلغ 150ج من رقم: ${phone}\nأريد تفعيل اشتراك نورا الآن`;
+            if(phone.length < 11) { alert("عفواً! رقم الهاتف غير صحيح."); return; }
+            const msg = `قمت بدفع مبلغ 150ج من رقم: ${phone}\nأريد كود فتح صور وفيديوهات نورا`;
             document.getElementById('wa-link').href = `https://wa.me/201203487990?text=${encodeURIComponent(msg)}`;
             document.getElementById('payment-page').style.display = 'none';
             document.getElementById('final-page').style.display = 'block';
         }
 
-        const names = ['أحمد ر.', 'محمود س.', 'كريم هـ.', 'ياسين م.', 'عمر ف.'];
+        function showCodeSection() {
+            setTimeout(() => { document.getElementById('code-section').style.display = 'block'; }, 1500);
+        }
+
+        function checkCode() {
+            const userCode = document.getElementById('activation-code').value;
+            const correctCode = "NORA77"; 
+            // تم تحديث رابط القناة هنا
+            const myContent = "https://t.me/+z2Lw3D_U7bE0NjA8"; 
+
+            if(userCode === correctCode) {
+                alert("تم التحقق بنجاح! جارِ توجيهك للألبوم...");
+                window.location.href = myContent;
+            } else {
+                alert("كود فك القفل غير صحيح! تواصل مع الدعم عبر الواتساب.");
+            }
+        }
+
+        const names = ['محمد ع.', 'ياسر س.', 'خالد م.', 'إسلام ب.'];
         setInterval(() => {
             const name = names[Math.floor(Math.random() * names.length)];
-            document.getElementById('notif-text').innerHTML = `قام <b>${name}</b> بتحويل 150ج الآن ✅`;
+            document.getElementById('notif-text').innerHTML = `قام <b>${name}</b> بدفع حق المحتوى الآن ✅`;
             const n = document.getElementById('notif');
             n.classList.add('show');
             setTimeout(() => n.classList.remove('show'), 3000);
-        }, 12000);
+        }, 15000);
     </script>
 </body>
-                                                                                                                                             </html>
-    
+</html>
